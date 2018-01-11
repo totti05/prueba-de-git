@@ -1,0 +1,67 @@
+Tres estados de git 
+Working Area
+Staging Area
+Repository
+
+
+ubicarse en la carpeta en terminal
+q 									| para salir
+git help								|ayuda sobre los comandos
+
+git init 								| para iniciar seguimiento git en la carpeta
+git add nombredelarchivo.extension 					| si el archivo tiene espacios en el nombre usar ""
+git add -A 								| agrega todos los nuevos cambios al staging area
+git commit -m 'mensaje' 						| mensaje describe el cambio que se realizo con comillas simples
+git log								 	| muestra todos los commit guardados hasta el momento
+git log > commits.txt							| nos crea un archivo txt con la informacion de los commits
+git checkout codigodelcommit 						| nos permite movernos entre commit si se coloca checkout 
+								          master vuelves al ultimo commit creado
+git reset --soft							| no toca el Working Area no toca el codigo
+git reset --mixed							| no toca el Working Area ni el Staging Area no tiene mucho uso
+git reset --hard							| borra todo lo que hay en el commit
+q 									| para salir
+git help								|ayuda sobre los comandos
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+RAMAS
+
+Head commit donde te encuentras actualmente
+ramas linea de tiempo en el proyecto
+
+Rama Master rama creada por default
+la rama coloreada y con * es la que te encuentras actualmente
+git branch								| muestra las ramas
+git branch nombredelarama 						| crea una rama
+git checkout nombredelarama 						| permite moverte entre ramas
+git brach -D nombredelarama 						| permite borrar la rama
+	RAMAS
+
+		MASTER -----------|-----------
+				TEST -----------|--------
+						TEST2--------------- 
+Fusiones 
+
+Se fusiona la rama con otra por ejemplo la rama TEST que era para pruebas 
+se fusiona con la rama MASTER porque paso las pruebas, el procedimiento es ubicarse
+en la rama que absorbera a la otra en este caso Master luego de aplicar el comando
+en la rama Master se creara un commit con todos los commit o cambios que habian en 
+la rama Test. Esto sin borrar la rama Test.
+
+git merge nombredelarama   						| es el comando para fusionar ramas, en nombredelarama va  el nombre
+									  de la rama que sera absorbida
+Fastforward o manual merge  						| Es un mensaje que arroja al hacer la fusion Manual es previa revision
+									  de alguien y fastforwar directo sin revision 
+git checkout -b nombredelarama						| permite crear y moverte a la rama creada
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+GitHub+Git
+
+Debes crear repository en Github y luego enlazar el local con el remoto
+git clone  								| descarga un repositorio de github en la direccion de la carpeta donde estas 
+									  ubicado
+git remote add origin  enlacereporemoto					| enlace proyecto local con proyecto remoto
+git remote -v								| nos muestra los enlaces con los repositorios remotos 
+git remote remove origin 						| elimina el enlace del repository local con el remoto
+git push origin ramaquequierepasaralreporemote				| pasa lo que esta en el local a repositorio github pedira usuario y contraseña de github
+git pull origin master 							| copia los archivos que esta en el repositorio remoto en el local
