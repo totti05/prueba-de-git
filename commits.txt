@@ -1,0 +1,23 @@
+commit aac703e88c918ef91cc5a87d1c024520a612314f
+Author: totti05 <raul_leandro_0504@hotmail.com>
+Date:   Thu Jan 11 18:18:15 2018 -0400
+
+    agregue mas comandos a al archivo comando git
+
+commit b9ecbbcbc4e66728d897238a5379dc78f19cd81f
+Author: totti05 <raul_leandro_0504@hotmail.com>
+Date:   Thu Jan 11 17:36:34 2018 -0400
+
+    agregue archivo de comandos git
+
+commit e5335fea7062f3b580d4d026ba4d4d3353cd214b
+Author: totti05 <raul_leandro_0504@hotmail.com>
+Date:   Thu Jan 11 12:03:54 2018 -0400
+
+    segunda prueba se añadio otro archivo
+
+commit 8f34a2d1ad2062e6efba9c7401b87aee8b02929e
+Author: totti05 <raul_leandro_0504@hotmail.com>
+Date:   Thu Jan 11 11:54:47 2018 -0400
+
+    primera prueba git añadiendo archivo
