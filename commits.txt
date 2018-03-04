@@ -1,3 +1,9 @@
+commit 3ef6f1404a729d5ce433432a40b82e7063ee8fb7
+Author: totti05 <raul_leandro_0504@hotmail.com>
+Date:   Sat Mar 3 13:21:46 2018 -0400
+
+    se creo un archivo commits.txt para informacion de los commits se actualizo luego de crearse este es el ultimo commit, esta carpeta esta enlazada a un repo remoto en github, falta hacer el ultimo push, de la rama pruebas, hay dos ramas pruebas y la master
+
 commit aac703e88c918ef91cc5a87d1c024520a612314f
 Author: totti05 <raul_leandro_0504@hotmail.com>
 Date:   Thu Jan 11 18:18:15 2018 -0400
