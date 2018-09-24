@@ -18,7 +18,7 @@ git help								|ayuda sobre los comandos
 git init 								| para iniciar seguimiento git en la carpeta
 git status								| para saber el status(estado) de los archivos de la carpeta en seguimiento 
 git add nombredelarchivo.extension 					| si el archivo tiene espacios en el nombre usar ""
-git add -A 								| agrega todos los nuevos cambios al staging area
+git add -A 								| agrega todos los nuevos cambios al staging area (con A mayuscula)
 git commit -m 'mensaje' 						| mensaje describe el cambio que se realizo con comillas simples
 git log								 	| muestra todos los commit guardados hasta el momento
 git log > commits.txt							| nos crea un archivo txt con la informacion de los commits
@@ -73,3 +73,19 @@ git remote -v								| nos muestra los enlaces con los repositorios remotos
 git remote remove origin 						| elimina el enlace del repository local con el remoto
 git push origin ramaquequierepasaralreporemote				| pasa lo que esta en el local a repositorio github pedira usuario y contraseña de github
 git pull origin master 							| copia los archivos que esta en el repositorio remoto en el local
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Este es el codigo que recomienda github para crear un nuevo repositorio con la linea de comandos
+
+echo "# appPrueba" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/totti05/appPrueba.git
+git push -u origin master
+
+y este de uno existente 
+
+git remote add origin https://github.com/totti05/appPrueba.git
+git push -u origin master
+
