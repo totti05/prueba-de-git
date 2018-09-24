@@ -3,12 +3,20 @@ Working Area
 Staging Area
 Repository
 
+Luego de instalar git debe configurarse a traves de estos comandos 
+
+git config --global user.name "nombredeusuario"
+git config --global user.email "emaildeusuario"
+git config --global color.ui true
+git config --global --list                  				| para visualizar todas las configuraciones
+
 
 ubicarse en la carpeta en terminal
 q 									| para salir
 git help								|ayuda sobre los comandos
 
 git init 								| para iniciar seguimiento git en la carpeta
+git status								| para saber el status(estado) de los archivos de la carpeta en seguimiento 
 git add nombredelarchivo.extension 					| si el archivo tiene espacios en el nombre usar ""
 git add -A 								| agrega todos los nuevos cambios al staging area
 git commit -m 'mensaje' 						| mensaje describe el cambio que se realizo con comillas simples
